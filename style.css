@@ -67,6 +67,8 @@ body * {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+
+  animation: back 0.4s;
 }
 #botao span {
   display: block;
@@ -78,8 +80,10 @@ body * {
   border-radius: 9999px;
 }
 .light #botao button {
-  right: 0;
-  left: initial;
+  animation: slide 0.4s forwards;
+}
+#botao button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 /* links*/
 ul {
@@ -139,5 +143,21 @@ footer {
   }
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+@keyframes slide {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
