@@ -1,113 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Vinícios Portifólio</title>
+    <title>DevLinks</title>
 </head>
 <body>
-    <header>
-        <nav>
- 
-            <a class="links" href="#">Início</a>
-            <a class="links" href="#">Projetos</a>
-            <a class="links" href="#">Sobre</a>
-            <a class="links" href="#">Contato</a>
+    <div id="container">
+        <div id="profile">
+        <img src="assets/avatar.png" alt="Foto de Vinícios">
+                <p>@viniz.wt</p>
+        </div>
+    <div id="botao" onclick="toggleMode()">
+        <button>
+        </button>
+        <span></span>
+    </div>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/viniz.wt/" target="_blank">Instagram</a>
+            </li>
+            <li>
+                <a href="https://github.com/viniz08" target="_blank">Github</a>
+            </li>
+            <li>
+            <a href="https://www.linkedin.com/in/jos%C3%A9-vin%C3%ADcios-silva-dos-santos-5305a6234/" target="_blank">Linkedin</a>
+            </li>
+            <li>
+                <a href="#" target="_blank">Meu portfólio</a>
+            </li>
+        </ul>
+        <div id="links">
+            <a href="https://github.com/viniz08" target="_blank">
+             <ion-icon name="logo-github"></ion-icon>
+            </a>
+        
+            <a href="https://www.linkedin.com/in/jos%C3%A9-vin%C3%ADcios-silva-dos-santos-5305a6234/" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
 
-           </nav>
-    </header>
-    
-    <div class="container">
-    <main class="Início" class="Projetos" class="Sobre">
-        <img id="imagem1" src="assets/vinicios.jpeg" alt="foto de josé vinícios">
-        <h1>Olá, sou José Vinícios!</h1>
-        
-        <p class="paragrafo">
-            Sou estudante de programação, com foco no Front-End,
-            estou sempre buscando novos desafios e oportunidades para evoluir minhas habilidades em programação.
-            Possuo conhecimentos básicos em HTML, CSS e JavaScript. Acompanhe por aqui a minha evolução com projetos pessoais e imersões sobre programação.
-        </p>
-        
-        <div id="redes">
             <a href="https://www.instagram.com/viniz.wt/" target="_blank">
                 <ion-icon name="logo-instagram"></ion-icon>
             </a>
-            <a href="https://www.linkedin.com/in/jos%C3%A9-vin%C3%ADcios-silva-dos-santos-5305a6234/" target="_blank">
-                <ion-icon name="logo-linkedin"></ion-icon>
-            </a> 
-            <a href="https://github.com/JoseVinicios" target="_blank">
-                <ion-icon name="logo-github"></ion-icon>
-            </a>
-
         </div>
-        
-    </main>
-    
+        <footer>
+            Feito pela <a href="https://rocketseat.com.br">Rocketseat</a>
+        </footer>
     </div>
-    
-    <!--Projetos-->
-    <div class="container2">
-        <h1>Projetos!</h1>
-    <div class="projeto">
-    <ul>
-        <li>
-            <h3>Projeto DevLinks:</h3>
-            <p class="paragrafo2">Projeto criado com a plataforma <a href="https://www.rocketseat.com.br/discover" target="_blank">Rocketseat,</a>
-            consiste em uma página de apresentação pessoal, contendo botões para redes sociais e um botão para
-            mudança de tema.
-            </p>
-            <h3>Tecnologias utilizadas:</h3>
-            <p class="tecicons">
-                    <ion-icon name="logo-html5"></ion-icon>
-                    <ion-icon name="logo-css3"></ion-icon>
-                    <ion-icon name="logo-javascript"></ion-icon>
-            </p>
 
-   
-            <img class="devlinksimg" src="assets/devlinks.png" alt="projeto dev links modo escuro">
-        
-        <div class="acessos">
-            <a href="//josevinicios.github.io/projetoDevLinks/" target="_blank">
-                <ion-icon name="globe-outline"></ion-icon>
-                Site</a>
-            <a href="https://github.com/JoseVinicios/projetoDevLinks" target="_blank">
-                <ion-icon name="logo-github"></ion-icon>
-                Repositório</a>
-        </div>                
-        </li>
-    </ul>
-    <ul>
-        <li>
-            <h3>Projeto Nlw-Unite:</h3>
-            <p class="paragrafo2">Outro projeto criado com a plataforma <a href="https://www.rocketseat.com.br/discover" target="_blank">Rocketseat,</a>
-            consiste em uma página de formulário, com lista atualizada, opção de check-in utilizando o JavaScript, feito em três vídeo aulas.
-            </p>
-            <h3>Tecnologias utilizadas:</h3>
-        <p class="tecicons">
-                <ion-icon name="logo-html5"></ion-icon>
-                <ion-icon name="logo-css3"></ion-icon>
-                <ion-icon name="logo-javascript"></ion-icon>
-        </p>
-       
-            <img class="nlwimg" src="assets/nlw1.png" alt="projeto nlwunite">
-    
-        <div class="acessos">
-            <a href="https://josevinicios.github.io/nlw-unite/" target="_blank">
-                <ion-icon name="globe-outline"></ion-icon>
-                Site</a>
-            <a href="https://github.com/JoseVinicios/nlw-unite" target="_blank">
-                <ion-icon name="logo-github"></ion-icon>
-                Repositório</a>
-        </div>     
-        </li>
-    </ul>
-    </div>
-    
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
